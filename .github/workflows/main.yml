@@ -1,0 +1,27 @@
+name: Deploy Latest Website
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [closed]
+    branches:
+      - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Run a one-line script
+        run: echo Copying website over!
+      - name: FTP-Deploy-Action
+        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        with:
+          ftp-server: ftp://demo.zach-martin.com
+          ftp-username: ${{ secrets.FTP_USER }}
+          ftp-password: ${{ secrets.FTP_USER_PASS }}
+          git-ftp-args: --remote-root "./demo.zach-martin.com"
