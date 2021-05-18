@@ -15,3 +15,5 @@ Additionally, if you like the layout of the website, I would recommend starting 
 [Start Bootstrap - Bare](https://startbootstrap.com/template-overviews/bare/)
 
 [Bare](http://startbootstrap.com/template-overviews/bare/) is a bare HTML starter template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features predefined file paths for Bootstrap and jQuery, so you can quickly create Bootstrap websites.
+
+![Lab 2 Workflow](https://github.com/onideus/demo-website/workflows/Lab%202%20Workflow/badge.svg)
